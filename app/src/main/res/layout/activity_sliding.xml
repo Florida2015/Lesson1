@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sliding"
+        android:background="#fff"
+        tools:context="cn.edu.nuc.lesson1.SlidingActivity">
+        <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_gravity = "left|start"
+                android:id="@+id/menu"
+                android:orientation="vertical"
+                android:background="#0f0"
+                >
+
+        </LinearLayout>
+        <!--5.0以上才可以使用elevation-->
+        <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/container"
+                android:background="#0f0"
+                android:elevation="5dp"
+                >
+                <TextView
+                        android:text="Hello World!"
+                        android:textColor="#ff0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+
+
+</android.support.v4.widget.SlidingPaneLayout>

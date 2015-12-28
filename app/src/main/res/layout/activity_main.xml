@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <android.support.design.widget.TabLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabTextColor="#000"
+                        app:tabSelectedTextColor="#70d66c"
+                        app:tabMode="scrollable"
+
+                        android:id="@+id/tab"
+                        />
+                <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+        </LinearLayout>
+        <!--design包下有8个控件-->
+
+        <android.support.design.widget.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity = "left|start"
+                app:menu="@menu/navigation"
+                app:itemTextAppearance="?android:textAppearance"
+                app:headerLayout="@layout/menu_header"
+                android:id="@+id/menu"
+                >
+        </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
